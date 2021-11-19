@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function validateForm() {
+        let x = document.forms["myForm"]["disability"].value;
+        if (x == "") {
+            alert("If you do not wish to answer, click 'I do not wish to answer'.");
+            return false;
+        }
+        let x = document.forms["myForm"]["felon"].value;
+        if (x == "") {
+            alert("If you do not wish to answer, click 'I do not wish to answer'.");
+            return false;
+        }
+    }
+</script>
+<div class="text-container">
+    <h2>Disability</h2>
+    <p>Unfinished Business strives to provide equal opportunity to qualified people with disablities. To help
+        measure this, we ask you to tell us if you have a disability or not.
+        This form is completely voluntary. Any answer you give will be kept private and will not be used against you
+        in any way.
+    </p>
+    <p>Disabilities include, but are not limited to: </p>
+    <div style="float: left; width: 33%;">
+        <ul>
+            <li>Blindness</li>
+            <li>Deafness</li>
+            <li>Cancer</li>
+            <li>Diabetes</li>
+            <li>Epilepsy</li>
+        </ul>
+    </div>
+    <div style="float: left; width: 33%;">
+        <ul>
+            <li>Autism</li>
+            <li>Cerebral palsy</li>
+            <li>HIV/AIDS</li>
+            <li>Schizophrenia</li>
+            <li>Muscular dystropy</li>
+        </ul>
+    </div>
+    <div style="float: right; width: 33%;">
+        <ul>
+            <li>Bipolar disorder</li>
+            <li>Major depression</li>
+            <li>Multiple sclerosis (MS)</li>
+            <li>Missing limbs or partially missing limbs</li>
+            <li>Post-traumatic stress disorder (PTSD)</li>
+        </ul>
+    </div>
+</div>
+<!-- add to action=""-->
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    <p>Please check one of the boxes below:</p>
+    <input type="radio" id="yes" name="disability" value="YES">
+    <label for="yes">Yes, I do have a disability.</label><br>
+    <input type="radio" id="no" name="disability" value="NO">
+    <label for="no">No, I do have a disability.</label><br>
+    <input type="radio" id="wishnottoanswer" name="disability" value="WISHNOTTOANSWER">
+    <label for="wishnottoanswer">I do not wish to answer.</label><br>
+    
+    <p>Have you ever been convicted of a felon?</p>
+    <input type="radio" id="yes" name="felon" value="YES">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="felon" value="NO">
+    <label for="no">No</label><br>
+    <input type="radio" id="wishnottoanswer" name="felon" value="WISHNOTTOANSWER">
+    <label for="wishnottoanswer">I do not wish to answer.</label><br>
+
+    <h2>Military Status</h2>
+    <p>Have you served in the U.S. Armed Services?</p>
+    <input type="radio" id="yes" name="military" value="YES">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="military" value="NO">
+    <label for="no">No</label><br>
+    <input type="radio" id="wishnottoanswer" name="military" value="WISHNOTTOANSWER">
+    <label for="wishnottoanswer">I do not wish to answer.</label><br>
+
+
+    <input type="submit" value="Next Page">
+</form>
+
+</html>
