@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+
+    <style>
+                /*CSS for logo and company name*/
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /*CSS that makes the progress bar look niceish*/
+        .progressbar {
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        } 
+        .column {
+            float: left;
+            width: 11.1%;
+            padding: none;
+        }
+        .row::after {
+            content: "";
+            clear: none;
+            display: table;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*CSS for the page title*/
+        h1 {
+            color: #0f1842;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        /*CSS for page text*/
+        p {
+            color: #2c2a28;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        /*CSS for the buttons*/
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            background-color: #0f1842;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            padding-right: 5pt;
+            padding-left: 5pt;
+            position: relative;
+        }
+        .button:hover {
+            background-color: #867d74;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Logo and company name-->
+    <div class="logo">
+        <img src="Pictures/Logo_And_Name(1).png" alt="Unfinished Business">
+    </div>
+
+    <!--Progress Bar Code (must be individualized for each page)-->
+    <div class="progressbar">
+        <div class="row">
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Blue_1.png" alt="page 1">
+                </a>
+            </div>
+            <div class="column">
+                    <img src="Pictures/Bar_Gray.png">
+            </div>
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Gray_2.png" alt="page 2">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Gray.png">
+            </div>
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Gray_3.png" alt="page 3">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Gray.png">
+            </div>
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Gray_4.png" alt="page 4">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Gray.png">
+            </div>
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- line breaks to make sure text doesnt wrap around progress bar-->
+    <br />
+    <br />
+    <br />
+
+    <!--Page Title-->
+    <h1><u> Welcome </u></h1>
+
+    <!--Page Text-->
+    <p>
+        Welcome to the UNFinished Business digital employment application! In the following pages
+        you will be shown a series of forms. Please fill everything out honestly and to the best of 
+        your ability. To navigate your application, you can click the "next" button 
+        to get to the next page or the "previous" button to return to the previous page. The progress bar at the 
+        top of the screen will show you where you are in the process. Each number represents a page. If 
+        you would like to go to a specific page, you may click on a number and it will bring you there.
+        Once you reach the final page, you may submit your application. If at any point you would like to review
+        these instructions, you may return to this page to do so. Please click on "next" to be taken to your 
+        first form.
+    </p>
+
+    <!--Buttons-->
+    <div class="button-container">
+        <a href= Welcome.html class="button">&laquo; Previous</a>
+        <a href= Welcome.html class="button">Next &raquo;</a>
+    </div>
+
+</body>
+
+</html>
