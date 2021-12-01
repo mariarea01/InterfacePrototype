@@ -6,18 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Past Work Experience</title> 
+
   </head>
   <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-    .w3-sidebar {
-      z-index: 3;
-      width: 250px;
-      top: 43px;
-      bottom: 0;
-      height: inherit;
-    }
+     /*CSS for logo and company name*/
+     .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /*CSS that makes the progress bar look niceish*/
+        .progressbar {
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        } 
+        .column {
+            float: left;
+            width: 11.1%;
+            padding: none;
+        }
+        .row::after {
+            content: "";
+            clear: none;
+            display: table;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*CSS for the page title*/
+        h1 {
+            color: #0f1842;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        /*CSS for page text*/
+        p {
+            color: #2c2a28;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        /*CSS for the buttons*/
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            background-color: #0f1842;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            padding-right: 5pt;
+            padding-left: 5pt;
+            position: relative;
+        }
+        .button:hover {
+            background-color: #867d74;
+            color: black;
+        }
     </style>
+
   <body> 
+      <!--Logo and company name-->
+      <div class="logo">
+        <img src="Pictures/Logo_And_Name(1).png" alt="Unfinished Business">
+  </div>
+
+    <br />
+    <br />
+    <br />
+    
     <h1>Past Work Experience</h1> 
     <h2>PLEASE LIST YOUR WORK EXPERIENCE FOR THE PAST FIVE YEARS BEGINNING WITH THE MOST RECENT JOB</h2>
     <div class="form-group">
@@ -103,7 +169,12 @@
       <label for="usr">Email Address:</label>
       <input type="text" class="form-control" id="usr" placeholder="Enter Email Address">
     </div>
-    <h3>NEXT</h3>
+    
+    <div class ="bootstrap.css" style="text-align:center">
+      <button type="button" class="btn btn-info">Back</button>
+      <button type="button" class="btn btn-success" onclick="document.location='DisabilityCriminalMilitary.html'">Next</button>
+       </div>
+
   </body>
 
 </html>
