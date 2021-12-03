@@ -159,7 +159,7 @@ input[type=tel] {
           <img src="Pictures/Bar_Gray.png">
       </div>
       <div class="column">
-          <a href="Welcome.html">
+          <a href="PastWorkExperience.html">
               <img src="Pictures/Page_icon_Gray_3.png" alt="page 3">
           </a>
       </div>
@@ -167,7 +167,7 @@ input[type=tel] {
           <img src="Pictures/Bar_Gray.png">
       </div>
       <div class="column">
-          <a href="Welcome.html">
+          <a href="DisabilityCriminalMilitary.html">
               <img src="Pictures/Page_icon_Gray_4.png" alt="page 4">
           </a>
       </div>
@@ -175,7 +175,7 @@ input[type=tel] {
           <img src="Pictures/Bar_Gray.png">
       </div>
       <div class="column">
-          <a href="Welcome.html">
+          <a href="ThankYou.html">
               <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
           </a>
       </div>
