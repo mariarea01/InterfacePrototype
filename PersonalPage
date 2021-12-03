@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+    
+  .btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+          .btn-success {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+         }
+
+  .center {
+  margin-left: auto;
+  margin-right: auto;
+} 
+  input[type=date] {
+  width: 500px;
+  padding: 12px 20px;
+  
+  box-sizing: border-box;
+}
+
+  input[type=text] {
+  width: 500px;
+  padding: 12px 20px;
+  
+  box-sizing: border-box;
+}
+input, textarea, select { 
+  margin-top: 10px; display: block;
+}
+input[type=number] {
+  width: 500px;
+  padding: 12px 20px;
+  
+  box-sizing: border-box;
+}
+input, label {
+    display:block;
+}
+input[type=tel] {
+  width: 500px;
+  padding: 12px 20px;
+ 
+  box-sizing: border-box;
+}
+
+  input[type=email] {
+    width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+ /*CSS for logo and company name*/
+ .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /*CSS that makes the progress bar look niceish*/
+        .progressbar {
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        } 
+        .column {
+            float: left;
+            width: 11.1%;
+            padding: none;
+        }
+        .row::after {
+            content: "";
+            clear: none;
+            display: table;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*CSS for the page title*/
+        h1 {
+            color: #0f1842;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        /*CSS for page text*/
+        p {
+            color: #2c2a28;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .label{
+      display: inline;
+       margin-right: 5px;
+    }
+        /*CSS for the buttons*/
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            background-color: #0f1842;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            padding-right: 5pt;
+            padding-left: 5pt;
+            position: relative;
+        }
+        .button:hover {
+            background-color: #867d74;
+            color: black;
+        }
+
+        input[type=radio] {
+        display: inline;
+}
+
+
+  </style>
+
+<body>
+
+<div class="logo">
+    <img src="Pictures/Logo_And_Name(1).png" alt="Unfinished Business">
+</div>
+
+
+<div class="progressbar">
+  <div class="row">
+      <div class="column">
+          <a href="Welcome.html">
+              <img src="Pictures/Page_icon_Blue_1.png" alt="page 1">
+          </a>
+      </div>
+      <div class="column">
+              <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+          <a href="PersonalPage.html">
+              <img src="Pictures/Page_icon_Gray_2.png" alt="page 2">
+          </a>
+      </div>
+      <div class="column">
+          <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+          <a href="Welcome.html">
+              <img src="Pictures/Page_icon_Gray_3.png" alt="page 3">
+          </a>
+      </div>
+      <div class="column">
+          <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+          <a href="Welcome.html">
+              <img src="Pictures/Page_icon_Gray_4.png" alt="page 4">
+          </a>
+      </div>
+      <div class="column">
+          <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+          <a href="Welcome.html">
+              <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
+          </a>
+      </div>
+  </div>
+</div>
+
+<!-- line breaks to make sure text doesnt wrap around progress bar-->
+<br />
+<br />
+<br />
+
+<h2>Personal Information</h2>
+<h3>Please complete the form below with your personal details.</h3>
+
+  <form>
+
+        <table style="width:100" class="center">
+          <tr>
+            <div class="form-group">
+              <td>
+              <label for="usr">First Name:</label>
+              <input type="text" class="form-control" id="usr" required>
+              </td>
+            </div>
+        
+            <div class="form-group">
+              <td>
+              <label for="usr">Last Name:</label>
+              <input type="text" class="form-control" id="address"required>
+              </td>
+            </div>
+
+          </tr>  
+        <tr>
+          <div class="form-group">
+            <td>
+            <label for="usr">Street Address:</label>
+            <input type="text" class="form-control" id="address" required>
+            </td>
+          </div>
+
+          <div class="form-group">
+            <td>
+            <label for="usr">City:</label>
+            <input type="text" class="form-control" id="address" required>
+            </td>
+            </div>
+        </tr>
+
+        <tr>
+          <div class="form-group">
+            <td>
+            <label for="usr">State:</label>
+            <input type="text" class="form-control" id="address" required>
+            </td>
+          </div>
+
+          <div class="form-group">
+            <td>
+            <label for="usr">Zip:</label>
+            <input type="number" class="form-control" id="address" required>
+            </td>
+            </div>
+        </tr>
+
+        <tr>
+          <div class="form-group">
+            <td>
+            <label for="usr">Email:</label>
+            <input type="email" class="form-control" id="address" required>
+            </td>
+          </div>
+
+          <div class="form-group">
+            <td>
+              <label for="fname">Mobile Phone:</label>
+              <input type="tel" id="home" name="home" pattern="[0-9]{9}-[0-9]{2}-[0-9]{6}" required>       
+            </td>
+            </div>
+        </tr>
+      </table> 
+        
+    
+        <div class="form-group">
+         <center>
+              <label for="fname">Which position are you applying for?</label>
+              <select name="position" id="position" required>
+                 <option value="crew">Crew Member</option>
+                 <option value="manager">Manager</option>
+                 <option value="front">Help Desk</option>
+                 <option value="main">Warehouse</option>
+               </select>
+              </center>
+          
+          </div>
+
+
+          <div class="form-group">
+            <center>
+
+              <label for="fname" style="display:block">Will you be working part time or full time?</label>
+              <table style="width:100" class="center">
+                <td>
+        <input type="radio" id="full" name="time" value="Full Time" required>
+          <label class="radio-inline">Full Time</label>
+        </td>
+        <td>
+        <input type="radio" id="part" name="time" value="Part Time" required>
+          <label class="radio-inline" >Part Time</label>
+        </td>
+        </table>
+        </center>
+            </div>
+        
+
+        <tr>
+          <div class="form-group">
+           <center>
+
+              <label for="fname">Select all the day you are avaliable to work</label>
+              <table style="width:100" class="center">
+                <td>
+              <input type="radio" id="mon" name="m" value="Monday" required>
+            
+                <label for="full">Monday</label>
+              </td>
+              <td>
+              <input type="radio" id="tues" name="t" value="Tuesday" required>
+              
+                <label for="part">Tuesday</label>
+              </td>
+              <td>
+                <input type="radio" id="wed" name="w" value="Wednesday" required>
+                  <label for="full">Wednesday</label>
+                </td>
+                <td>
+                <input type="radio" id="thur" name="thur" value="Thursday" required>
+                  <label for="part">Thursday</label>
+                </td>
+                <td>
+                  <input type="radio" id="fri" name="f" value="Friday" required>
+                    <label for="full">Friday</label>
+                  </td>
+                  <td>
+                  <input type="radio" id="sat" name="sat" value="Saturday" required>
+                    <label for="part">Saturday</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="sun" name="sun" value="Sunday" required>
+                      <label for="part">Sunday</label>
+                    </td>
+                    </center>
+                  </table>  
+          </div>
+
+          <div class="form-group">
+           <center>
+              <label for="fname"  >Are you able to work nights?</label>
+              <table style="width:100" class="center">
+              <td>
+              <input type="radio" id="yes" name="answer" value="yes" required>
+                <label for="full">Yes</label>
+              </td>
+              <td>
+              <input type="radio" id="no" name="answer" value="no" required>
+                <label for="part">No</label>
+              </td>
+              </table>
+              </center>
+            </div>
+      
+            <table style="width:100" class="center">
+        <tr>
+          <div class="form-group">
+            <td>
+              <label for="fname">Weekly Hours:</label>
+              <input type="number" name="hours" required>
+            </td>
+            
+          </div>
+
+          <div class="form-group">
+            <td>
+            <label for="fname">Date avaliable to work:</label>
+            <input type="date" id="start" name="start">
+        </td>
+       </div>
+    </tr>
+  </table>
+
+    <br>
+    <div class ="bootstrap.css" style="text-align:center">
+      <button type="button" class="btn btn-info btn-sm"  onclick="document.location='Welcome.html'">Back</button>
+      <button type="button" class="btn btn-success btn-sm" onclick="document.location='PastWorkExperience.html'">Next</button>
+    </div>
+  </form>
+
+</body>
+</html>
