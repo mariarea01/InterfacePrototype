@@ -49,8 +49,14 @@
             margin-right: 10%;
         }
         label, input[type="radio"] {
+
+            color: #2c2a28;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 100%;
-            vertical-align: middle;
+            text-align: left;
+            margin-left: 10%;
+            
+            
         }
         .column{
             color: #2c2a28;
@@ -187,7 +193,7 @@
 </div>
 <!-- add to action=""-->
 <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-    <p>Please check one of the boxes below:</p>
+    <p style="text-align: left;">Please check one of the boxes below:</p>
     <input type="radio" id="yes" name="disability" value="YES">
     <label for="yes">Yes, I do have a disability.</label><br>
     <input type="radio" id="no" name="disability" value="NO">
@@ -196,7 +202,7 @@
     <label for="wishnottoanswer">I do not wish to answer.</label><br>
     
     <h1>Criminal Status</h1>
-    <p>Have you ever been convicted of a felon?</p>
+    <p style="text-align: left;">Have you ever been convicted of a felon?</p>
     <input type="radio" id="yes" name="felon" value="YES">
     <label for="yes">Yes</label><br>
     <input type="radio" id="no" name="felon" value="NO">
@@ -205,7 +211,7 @@
     <label for="wishnottoanswer">I do not wish to answer.</label><br>
 
     <h1>Military Status</h1>
-    <p>Have you served in the U.S. Armed Services?</p>
+    <p style="text-align: left;">Have you served in the U.S. Armed Services?</p>
     <input type="radio" id="yes" name="military" value="YES">
     <label for="yes">Yes</label><br>
     <input type="radio" id="no" name="military" value="NO">
@@ -214,7 +220,7 @@
     <label for="wishnottoanswer">I do not wish to answer.</label><br>
 
 
-    <div class="button-container">
+    <div class="bootstrap.css" style="text-align:center">
         <button type="button" class="btn btn-info" href="Welcome.html">Back</button>
         <button type="button" class="btn btn-info" href="Welcome.html">Next</button>
     </div>
