@@ -5,15 +5,103 @@
 <head>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
+ <style>
+        /*CSS for logo and company name*/
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /*CSS that makes the progress bar look niceish*/
+        .progressbar {
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        }
+
+        .column {
+            float: left;
+            width: 11.1%;
+            padding: none;
+        }
+
+        .row::after {
+            content: "";
+            clear: none;
+            display: table;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*CSS for the page title*/
+        h1 {
+            color: #0f1842;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        /*CSS for page text*/
+        p {
+            color: #2c2a28;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
 
 <body>
-	<div class="styles.css">
-		<h1> UNFinished Business
-		</h1>
-	</div>
-
-	<hr style="width:100%; text-align:left; display:inline-block; margin-left:0">
-	<img class="center-img" src="Logo.jpg" />
+	<div class="logo">
+        <img src="Pictures/Logo_And_Name(1).png" alt="Unfinished Business">
+    </div>
+	
+	 <!--Progress Bar Code (must be individualized for each page)-->
+    <div class="progressbar">
+        <div class="row">
+            <div class="column">
+                <a href="Welcome.html">
+                    <img src="Pictures/Page_icon_Blue_1.png" alt="page 1">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Blue.png">
+            </div>
+            <div class="column">
+                <a href="PersonalPage.html">
+                    <img src="Pictures/Page_icon_Blue_2.png" alt="page 2">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Blue.png">
+            </div>
+            <div class="column">
+                <a href="PastWorkExperience.html">
+                    <img src="Pictures/Page_icon_Blue_3.png" alt="page 3">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Blue.png">
+            </div>
+            <div class="column">
+                <a href="DisabilityCriminalMilitary.html">
+                    <img src="Pictures/Page_icon_Blue_4.png" alt="page 4">
+                </a>
+            </div>
+            <div class="column">
+                <img src="Pictures/Bar_Blue.png">
+            </div>
+            <div class="column">
+                <a href="TermsAndConditions.html">
+                    <img src="Pictures/Page_icon_Blue_5.png" alt="page 5">
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -39,7 +127,7 @@
 	</div>
 
 
-	<hr>
+	
 	<script src="script.js"></script>
 
 </html>
