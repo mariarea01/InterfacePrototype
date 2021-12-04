@@ -1,133 +1,148 @@
 <!doctype html>
 <html lang="en">
- 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Past Work Experience</title> 
-  </head>
-  <style>
-     /*CSS for logo and company name*/
-     .logo {
-            width: 100%;
-            height: auto;
-          }
-       /*CSS that makes the progress bar look niceish*/
-       .progressbar {
-            margin-left: auto;
-            margin-right: auto;
-            width: 35%;
-        } 
-        .column {
-            float: left;
-            width: 11.1%;
-            padding: none;
-        }
-        .row::after {
-            content: "";
-            clear: none;
-            display: table;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+<link rel="stylesheet" href="bootstrap/css/styles.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        /*CSS for the page title*/
-        h1 {
-            color: #0f1842;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 200%;
-            text-align: center;
-        }
+  <title>Past Work Experience</title>
+</head>
+<style>
+  /*CSS for logo and company name*/
+  .logo {
+    width: 100%;
+    height: auto;
+  }
 
-        h2{
-            color: #0f1842;
-            padding-top: 5pt;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-            text-align: left;
-        }
-        h3{
-            color: #000000;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 150%;
-            text-align: center;
-        }
+  /*CSS that makes the progress bar look niceish*/
+  .progressbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
 
-        /*CSS for page text*/
-        p {
-            color: #2c2a28;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-            text-align: center;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        
-        p1{
-          color: #2c2a28;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-            padding: 5px 5px;
-            box-sizing: border-box;
-            text-align: right;
-        }
+  .column {
+    float: left;
+    width: 11.1%;
+    padding: none;
+  }
 
-        /*CSS for the buttons*/
-        .button-container {
-            text-align: center;
-        }
-        .button {
-            background-color: #0f1842;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 5pt;
-            padding-bottom: 5pt;
-            padding-right: 5pt;
-            padding-left: 5pt;
-            position: relative;
-        }
-        .button:hover {
-            background-color: #867d74;
-            color: black;
-        }
-        /*CSS for text area*/
-        input[type=text] {
-          display:inline-block;
-          width:130px;
-          margin:0;
-          margin:0 0 7px 0;
-          text-align:left;
-        }
-        td{
-            color: #2c2a28;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-            padding: 5px 5px;
-            box-sizing: border-box;
-            text-align: right;
-          }
-          .form-check{
-            color: #2c2a28;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-            padding: 5px 5px;
-          }
-          .btn-info {
-            color: #fff;
-            background-color: #17a2b8;
-            border-color: #17a2b8;
-          }
-          .btn-success {
-            color: #fff;
-            background-color: #28a745;
-            border-color: #28a745;
-         }
-          </style>
+  .row::after {
+    content: "";
+    clear: none;
+    display: table;
+  }
 
-<body> 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*CSS for the page title*/
+  h1 {
+    color: #0f1842;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  h2 {
+    color: #0f1842;
+    padding-top: 5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: left;
+  }
+
+  h3 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  /*CSS for page text*/
+  p {
+    color: #2c2a28;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  p1 {
+    color: #2c2a28;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  /*CSS for the buttons*/
+  .button-container {
+    text-align: center;
+  }
+
+  .button {
+    background-color: #0f1842;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-right: 5pt;
+    padding-left: 5pt;
+    position: relative;
+  }
+
+  .button:hover {
+    background-color: #867d74;
+    color: black;
+  }
+
+  /*CSS for text area*/
+  input[type=text] {
+    display: inline-block;
+    width: 130px;
+    margin: 0;
+    margin: 0 0 7px 0;
+    text-align: left;
+  }
+
+  td {
+    color: #2c2a28;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  .form-check {
+    color: #2c2a28;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 5px 5px;
+  }
+
+  .btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+
+  .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+</style>
+
+<body>
   <!--Logo and company name-->
   <div class="logo">
     <img src="Pictures/Logo_And_Name(1).png" alt="Unfinished Business">
@@ -136,221 +151,213 @@
   <!--Progress Bar Code (must be individualized for each page)-->
   <div class="progressbar">
     <div class="row">
-        <div class="column">
-            <a href="Welcome.html">
-                <img src="Pictures/Page_icon_Blue_1.png" alt="page 1">
-            </a>
-        </div>
-        <div class="column">
-                <img src="Pictures/Bar_Gray.png">
-        </div>
-        <div class="column">
-            <a href="PersonalPage.html">
-                <img src="Pictures/Page_icon_Gray_2.png" alt="page 2">
-            </a>
-        </div>
-        <div class="column">
-            <img src="Pictures/Bar_Gray.png">
-        </div>
-        <div class="column">
-            <a href="PastWorkExperience.html">
-                <img src="Pictures/Page_icon_Gray_3.png" alt="page 3">
-            </a>
-        </div>
-        <div class="column">
-            <img src="Pictures/Bar_Gray.png">
-        </div>
-        <div class="column">
-            <a href="DisabilityCriminalMilitary.html">
-                <img src="Pictures/Page_icon_Gray_4.png" alt="page 4">
-            </a>
-        </div>
-        <div class="column">
-            <img src="Pictures/Bar_Gray.png">
-        </div>
-        <div class="column">
-            <a href="TermsAndConditions.html">
-                <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
-            </a>
-        </div>
+      <div class="column">
+        <a href="Welcome.html">
+          <img src="Pictures/Page_icon_Blue_1.png" alt="page 1">
+        </a>
+      </div>
+      <div class="column">
+        <img src="Pictures/Bar_Blue.png">
+      </div>
+      <div class="column">
+        <a href="PersonalPage.html">
+          <img src="Pictures/Page_icon_Blue_2.png" alt="page 2">
+        </a>
+      </div>
+      <div class="column">
+        <img src="Pictures/Bar_Blue.png">
+      </div>
+      <div class="column">
+        <a href="PastWorkExperience.html">
+          <img src="Pictures/Page_icon_Blue_3.png" alt="page 3">
+        </a>
+      </div>
+      <div class="column">
+        <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+        <a href="DisabilityCriminalMilitary.html">
+          <img src="Pictures/Page_icon_Gray_4.png" alt="page 4">
+        </a>
+      </div>
+      <div class="column">
+        <img src="Pictures/Bar_Gray.png">
+      </div>
+      <div class="column">
+        <a href="TermsAndConditions.html">
+          <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
+        </a>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- line breaks to make sure text doesnt wrap around progress bar-->
-<br />
-<br />
-<br />
+  <!-- line breaks to make sure text doesnt wrap around progress bar-->
+  <br />
+  <br />
+  <br />
 
-  
-  <h1>Past Work Experience</h1> 
+  <form name="myForm" action="DisabilityCriminalMilitary.html" onsubmit="return validateForm()" method="post">
+  <h1>Past Work Experience</h1>
   <h3>Employer Information</h3>
   <h2>Please list your work experience for the past five years beginning with the most recent job</h2>
-    <h2>Current/Previous Employer</h2>
-<table style="width:100">
-  <tr>
-    <div class="form-group">
-      <td>
-      <label for="usr">Employer Name:</label>
-      <input type="text" class="form-control" id="usr" maxlength="2048" required>
-      </td>
-    </div>
+  <h2>Current/Previous Employer</h2>
+  <table style="width:100">
+    <tr>
+      <div class="form-group">
+        <td>
+          <label for="usr">Employer Name:</label>
+          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+        </td>
+      </div>
 
-    <div class="form-group">
-      <td>
-      <label for="usr">Employer Address:</label>
-      <input type="text" class="form-control" id="address" maxlength="2048" required>
-      </td>
-    </div>
-  </tr>
+      <div class="form-group">
+        <td>
+          <label for="usr">Employer Address:</label>
+          <input type="text" class="form-control" id="address" maxlength="2048" required>
+        </td>
+      </div>
+    </tr>
 
-  <tr>
+    <tr>
       <div class="form-group">
         <td>
           <span class="input-group-addon">City:</span>
           <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
         </td>
       </div>
-        <div class="form-group">
-          <td>
+      <div class="form-group">
+        <td>
           <span class="input-group-addon">State:</span>
-          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required >
-          </td>
-        </div>
-  </tr>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
+        </td>
+      </div>
+    </tr>
 
-  <tr>
-        <div class="form-group">
-          <td>
+    <tr>
+      <div class="form-group">
+        <td>
           <span class="input-group-addon">Zip Code:</span>
           <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
-          </td>
-        </div>
+        </td>
+      </div>
 
-    <div class="form-group">
-      <td>
-      <label for="usr">Telephone:</label>
-      <input type="text" class="form-control" id="usr" maxlength="2048" required>
-      </td>
-    </div>
-  </tr>
+      <div class="form-group">
+        <td>
+          <label for="usr">Telephone:</label>
+          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+        </td>
+      </div>
+    </tr>
 
-  <tr>
-    <div class="form-group">
-      <td>
-      <label for="usr">Email Address:</label>
-      <input type="text" class="form-control" id="usr" maxlength="2048" required>
-      </td>
-    </div>
+    <tr>
+      <div class="form-group">
+        <td>
+          <label for="usr">Email Address:</label>
+          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+        </td>
+      </div>
 
-    <div class="form-group">
-      <td>
-      <label for="comment">Describe the duties that you worked on during this job.</label>
-      <textarea class="form-control" rows="1" id="comment" maxlength="2048 requred"></textarea>
-      </td>
-    </div>
-  </tr>
-</table>
+      <div class="form-group">
+        <td>
+          <label for="comment">Describe the duties that you worked on during this job.</label>
+          <textarea class="form-control" rows="1" id="comment" maxlength="2048 requred"></textarea>
+        </td>
+      </div>
+    </tr>
+  </table>
 
-<p1>
-  May we contact this employer?
-</p1>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Yes
-  </label>
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    No    
-  </label>
-</div>
+  <p1>
+    May we contact this employer?
+  </p1>
+  <div class="form-check">
+    <input type="radio" id="yes" name="contact" value="YES">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="contact" value="NO">
+    <label for="no">No</label><br>
+  </div>
 
 
-<h2>Previous Employer</h2>
-<table style="width:100">
-  <tr>
-    <div class="form-group">
-          <td>
+  <h2>Previous Employer</h2>
+  <table style="width:100">
+    <tr>
+      <div class="form-group">
+        <td>
           <label for="usr">Employer Name:</label>
           <input type="text" class="form-control" id="usr" maxlength="2048" required>
-          </td>
-        </div>
-    
-        <div class="form-group">
-          <td>
+        </td>
+      </div>
+
+      <div class="form-group">
+        <td>
           <label for="usr">Employer Address:</label>
           <input type="text" class="form-control" id="address" maxlength="2048" required>
-          </td>
-        </div>
-      </tr>
-    
-      <tr>
-          <div class="form-group">
-            <td>
-              <span class="input-group-addon">City:</span>
-              <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required >
-            </td>
-          </div>
-            <div class="form-group">
-              <td>
-              <span class="input-group-addon">State:</span>
-              <input id="msg" type="text" class="form-control" name="msg" maxlength="2048">
-              </td>
-            </div>
-      </tr>
-    
-      <tr>
-            <div class="form-group">
-              <td>
-              <span class="input-group-addon">Zip Code:</span>
-              <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" >
-              </td>
-            </div>
-    
-        <div class="form-group">
-          <td>
+        </td>
+      </div>
+    </tr>
+
+    <tr>
+      <div class="form-group">
+        <td>
+          <span class="input-group-addon">City:</span>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
+        </td>
+      </div>
+      <div class="form-group">
+        <td>
+          <span class="input-group-addon">State:</span>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048">
+        </td>
+      </div>
+    </tr>
+
+    <tr>
+      <div class="form-group">
+        <td>
+          <span class="input-group-addon">Zip Code:</span>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048">
+        </td>
+      </div>
+
+      <div class="form-group">
+        <td>
           <label for="usr">Telephone:</label>
           <input type="text" class="form-control" id="usr" maxlength="2048">
-          </td>
-        </div>
-      </tr>
-    
-      <tr>
-        <div class="form-group">
-          <td>
+        </td>
+      </div>
+    </tr>
+
+    <tr>
+      <div class="form-group">
+        <td>
           <label for="usr">Email Address:</label>
           <input type="text" class="form-control" id="usr" maxlength="2048">
-          </td>
-        </div>
-    
-        <div class="form-group">
-          <td>
+        </td>
+      </div>
+
+      <div class="form-group">
+        <td>
           <label for="comment">Describe the duties that you worked on during this job.</label>
           <textarea class="form-control" rows="1" id="comment" maxlength="2048"></textarea>
         </td>
-        </div>
-      </tr>
-    </table>
-    
-    <p1>
-      May we contact this employer?
-    </p1>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-        Yes
-      </label>
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-        No    
-      </label>
-    </div>
-      
-      <div class ="bootstrap.css" style="text-align:center">
-      <button type="button" class="btn btn-info btn-sm"  onclick="document.location='PersonalPage.html'">Back</button>
-      <button type="button" class="btn btn-success btn-sm" onclick="document.location='DisabilityCriminalMilitary.html'">Next</button>
-    </div>
+      </div>
+    </tr>
+  </table>
 
-  </body>
+  <p1>
+    May we contact this employer?
+  </p1>
+  <div class="form-check">
+    <input type="radio" id="yes" name="contact" value="YES">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="contact" value="NO">
+    <label for="no">No</label><br>
+  </div>
+
+  <div class="bootstrap.css" style="text-align:center">
+    <button type="button" class="btn btn-info btn-sm" onclick="document.location='PersonalPage.html'">Back</button>
+    <button type="submit" class="btn btn-success btn-sm" >Next</button>
+  </div>
+</form>
+</body>
 
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="bootstrap/css/styles.css">
@@ -64,24 +65,7 @@
             font-size: 100%;
             
         }
-        /*CSS for the buttons
-        .button-container {
-            text-align: center;
-        }
-        .button {
-            background-color: #0f1842;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 5pt;
-            padding-bottom: 5pt;
-            padding-right: 5pt;
-            padding-left: 5pt;
-            position: relative;
-        }
-        .button:hover {
-            background-color: #867d74;
-            color: black;
-        }*/
+       
     </style>
 
 </head>
@@ -105,7 +89,7 @@
                     <img src="Pictures/Bar_Blue.png">
             </div>
             <div class="column">
-                <a href="DisabilityCriminalMilitary.html">
+                <a href="PersonalPage.html">
                     <img src="Pictures/Page_icon_Blue_2.png" alt="page 2">
                 </a>
             </div>
@@ -113,7 +97,7 @@
                 <img src="Pictures/Bar_Blue.png">
             </div>
             <div class="column">
-                <a href="DisabilityCriminalMilitary.html">
+                <a href="PastWorkExperience.html">
                     <img src="Pictures/Page_icon_Blue_3.png" alt="page 3">
                 </a>
             </div>
@@ -129,7 +113,7 @@
                 <img src="Pictures/Bar_Gray.png">
             </div>
             <div class="column">
-                <a href="DisabilityCriminalMilitary.html">
+                <a href="TermsAndConditions.html">
                     <img src="Pictures/Page_icon_Gray_5.png" alt="page 5">
                 </a>
             </div>
@@ -140,20 +124,8 @@
     <br />
     <br />
     <br />
-<script>
-    function validateForm() {
-        let x = document.forms["myForm"]["disability"].value;
-        if (x == "") {
-            alert("If you do not wish to answer, click 'I do not wish to answer'.");
-            return false;
-        }
-        let y = document.forms["myForm"]["felon"].value;
-        if (y == "") {
-            alert("If you do not wish to answer, click 'I do not wish to answer'.");
-            return false;
-        }
-    }
-</script>
+    
+
 <div class="text-container">
     <h1>Disability</h1>
     <p>
@@ -192,7 +164,7 @@
     </div>
 </div>
 <!-- add to action=""-->
-<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+<form name="myForm" action="TermsAndConditions.html" onsubmit="return validateForm()" method="post" >
     <p style="text-align: left;">Please check one of the boxes below:</p>
     <input type="radio" id="yes" name="disability" value="YES">
     <label for="yes">Yes, I do have a disability.</label><br>
@@ -220,10 +192,11 @@
     <label for="wishnottoanswer">I do not wish to answer.</label><br>
 
 
-    <div class="bootstrap.css" style="text-align:center">
-        <button type="button" class="btn btn-info" href="Welcome.html">Back</button>
-        <button type="button" class="btn btn-info" href="Welcome.html">Next</button>
-    </div>
+    <div class ="bootstrap.css" style="text-align:center">
+        <button type="button" class="btn btn-info btn-sm"  onclick="document.location='PastWorkExperience.html'">Back</button>
+        <button type="submit" class="btn btn-success btn-sm" >Next</button>
+      </div>
 </form>
-
+<script src="script.js"></script>
+</body>
 </html>
