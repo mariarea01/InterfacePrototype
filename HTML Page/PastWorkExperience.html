@@ -140,6 +140,12 @@
     background-color: #28a745;
     border-color: #28a745;
   }
+
+  .form-container {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 </style>
 
 <body>
@@ -199,21 +205,22 @@
   <form name="myForm" action="DisabilityCriminalMilitary.html" onsubmit="return validateForm()" method="post">
   <h1>Past Work Experience</h1>
   <h3>Employer Information</h3>
-  <h2>Please list your work experience for the past five years beginning with the most recent job</h2>
+  <h2>Please list your work experience for your last two positions beginning with the most recent job</h2>
   <h2>Current/Previous Employer</h2>
+  <div class="form-container"></div>
   <table style="width:100">
     <tr>
       <div class="form-group">
         <td>
           <label for="usr">Employer Name:</label>
-          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+          <input type="text" class="form-control" id="usr" maxlength="20">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Employer Address:</label>
-          <input type="text" class="form-control" id="address" maxlength="2048" required>
+          <input type="text" class="form-control" id="address" maxlength="20">
         </td>
       </div>
     </tr>
@@ -222,13 +229,13 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">City:</span>
-          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20">
         </td>
       </div>
       <div class="form-group">
         <td>
           <span class="input-group-addon">State:</span>
-          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20" >
         </td>
       </div>
     </tr>
@@ -237,14 +244,15 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">Zip Code:</span>
-          <input id="msg" type="text" class="form-control" name="msg" maxlength="2048" required inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+          <input id="msg" type="number" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Telephone:</label>
-          <input type="text" class="form-control" id="usr" maxlength="2048" pattern="^\d{3}-\d{3}-\d{4}$" required>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <small>Format: 123-456-7890</small>
         </td>
       </div>
     </tr>
@@ -253,14 +261,14 @@
       <div class="form-group">
         <td>
           <label for="usr">Email Address:</label>
-          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+          <input type="email" name="email" class="form-control" id="address">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="comment">Describe the duties that you worked on during this job.</label>
-          <textarea class="form-control" rows="1" id="comment" maxlength="2048 requred"></textarea>
+          <textarea class="form-control" rows="1" id="comment" maxlength="2048"></textarea>
         </td>
       </div>
     </tr>
@@ -283,14 +291,14 @@
       <div class="form-group">
         <td>
           <label for="usr">Employer Name:</label>
-          <input type="text" class="form-control" id="usr" maxlength="2048" required>
+          <input type="text" class="form-control" id="usr" maxlength="20">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Employer Address:</label>
-          <input type="text" class="form-control" id="address" maxlength="2048" required>
+          <input type="text" class="form-control" id="address" maxlength="20">
         </td>
       </div>
     </tr>
@@ -299,13 +307,13 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">City:</span>
-          <input id="city" type="text" class="form-control" name="msg" maxlength="2048" required>
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20">
         </td>
       </div>
       <div class="form-group">
         <td>
           <span class="input-group-addon">State:</span>
-          <input id="state" type="text" class="form-control" name="msg" maxlength="2048">
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20">
         </td>
       </div>
     </tr>
@@ -314,14 +322,15 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">Zip Code:</span>
-          <input id="zipcode" type="text" class="form-control" name="msg" maxlength="2048" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+          <input id="msg" type="number" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Telephone:</label>
-          <input type="text" class="form-control" id="phone" maxlength="2048" pattern="^\d{3}-\d{3}-\d{4}$">
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <small>Format: 123-456-7890</small>
         </td>
       </div>
     </tr>
@@ -330,7 +339,7 @@
       <div class="form-group">
         <td>
           <label for="usr">Email Address:</label>
-          <input type="text" class="form-control" id="email" maxlength="2048">
+          <input type="email" name="email" class="form-control" id="address">
         </td>
       </div>
 
@@ -352,6 +361,8 @@
     <input type="radio" id="no" name="contact" value="NO">
     <label for="no">No</label><br>
   </div>
+
+
 
   <div class="bootstrap.css" style="text-align:center">
     <button type="button" class="btn btn-info btn-sm" onclick="document.location='PersonalPage.html'">Back</button>
