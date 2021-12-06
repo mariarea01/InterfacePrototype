@@ -10,6 +10,7 @@
 
   <title>Past Work Experience</title>
 </head>
+
 <style>
   /*CSS for logo and company name*/
   .logo {
@@ -54,7 +55,7 @@
     padding-top: 5pt;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   h3 {
@@ -72,15 +73,6 @@
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-  }
-
-  p1 {
-    color: #2c2a28;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    padding: 5px 5px;
-    box-sizing: border-box;
-    text-align: right;
   }
 
   /*CSS for the buttons*/
@@ -105,29 +97,6 @@
   }
 
   /*CSS for text area*/
-  input[type=text] {
-    display: inline-block;
-    width: 130px;
-    margin: 0;
-    margin: 0 0 7px 0;
-    text-align: left;
-  }
-
-  td {
-    color: #2c2a28;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    padding: 5px 5px;
-    box-sizing: border-box;
-    text-align: right;
-  }
-
-  .form-check {
-    color: #2c2a28;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    padding: 5px 5px;
-  }
 
   .btn-info {
     color: #fff;
@@ -141,11 +110,13 @@
     border-color: #28a745;
   }
 
-  .form-container {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+.form-check{
+  text-align: center;
+}
+
+.small{
+  margin-top: 5pt;
+}
 </style>
 
 <body>
@@ -209,8 +180,9 @@
   <h3>Employer Information</h3>
   <h2>Please list your work experience for your last two positions beginning with the most recent job</h2>
   <h2>Current/Previous Employer</h2>
+
   <div class="form-container"></div>
-  <table style="width:100">
+  <table style="width:100" class="center">
     <tr>
       <div class="form-group">
         <td>
@@ -246,14 +218,14 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">Zip Code:</span>
-          <input id="msg" type="number" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Telephone:</label>
-          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="text" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           <small>Format: 123-456-7890</small>
         </td>
       </div>
@@ -263,22 +235,25 @@
       <div class="form-group">
         <td>
           <label for="usr">Email Address:</label>
-          <input type="email" name="email" class="form-control" id="address">
+          <input type="text" name="email" class="form-control" id="address">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="comment">Describe the duties that you worked on during this job.</label>
-          <textarea class="form-control" rows="1" id="comment" maxlength="2048"></textarea>
+          <textarea class="form-control" rows="2.5" cols = "65" id="comment" maxlength="2048"></textarea>
         </td>
       </div>
     </tr>
   </table>
 
-  <p1>
+  <center>
+    <p>
     May we contact this employer?
-  </p1>
+  </p>
+</center>
+
   <div class="form-check">
     <input type="radio" id="yes" name="contact" value="YES">
     <label for="yes">Yes</label><br>
@@ -288,7 +263,7 @@
 
 
   <h2>Previous Employer</h2>
-  <table style="width:100">
+  <table style="width:100" class="center">
     <tr>
       <div class="form-group">
         <td>
@@ -324,14 +299,14 @@
       <div class="form-group">
         <td>
           <span class="input-group-addon">Zip Code:</span>
-          <input id="msg" type="number" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+          <input id="msg" type="text" class="form-control" name="msg" maxlength="20" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="usr">Telephone:</label>
-          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="text" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           <small>Format: 123-456-7890</small>
         </td>
       </div>
@@ -341,22 +316,22 @@
       <div class="form-group">
         <td>
           <label for="usr">Email Address:</label>
-          <input type="email" name="email" class="form-control" id="address">
+          <input type="text" name="email" class="form-control" id="address">
         </td>
       </div>
 
       <div class="form-group">
         <td>
           <label for="comment">Describe the duties that you worked on during this job.</label>
-          <textarea class="form-control" rows="1" id="comment" maxlength="2048"></textarea>
+          <textarea class="form-control" rows="2.5" cols="65" id="comment" maxlength="2048"></textarea>
         </td>
       </div>
     </tr>
   </table>
 
-  <p1>
+  <p>
     May we contact this employer?
-  </p1>
+  </p>
   <div class="form-check">
     <input type="radio" id="yes" name="contact" value="YES">
     <label for="yes">Yes</label><br>
