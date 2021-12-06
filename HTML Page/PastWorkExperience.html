@@ -370,62 +370,6 @@
   </div>
 </form>
 
-<!---
-<script>
-  // Get the text field that we're going to track
-let address = document.getElementById("address", "usr", "city", "state", "zipcode","phone", "email", "comment");
-
-// See if we have an autosave value
-// (this will only happen if the page is accidentally refreshed)
-if (sessionStorage.getItem("autosave")) {
-  // Restore the contents of the text field
-  address.value = sessionStorage.getItem("autosave");
-  usr.value = sessionStorage.getItem("autosave");
-  city.value = sessionStorage.getItem("autosave");
-  state.value = sessionStorage.getItem("autosave");
-  zipcode.value = sessionStorage.getItem("autosave");
-  phone.value = sessionStorage.getItem("autosave");
-  email.value = sessionStorage.getItem("autosave");
-  comment.value = sessionStorage.getItem("autosave");
-};
-
-// Listen for changes in the text field
-usr.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", usr.value);
-});
-
-city.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", city.value);
-});
-
-state.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", state.value);
-});
-
-zipcode.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", zipcode.value);
-});
-
-phone.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", phone.value);
-});
-
-email.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", email.value);
-});
-
-comment.addEventListener("change", function(){
-  sessionStorage.setItem("autosave", comment.value);
-});
-
-address.addEventListener("change", function() {
-  // And save the results into the session storage object
-  sessionStorage.setItem("autosave", address.value);
-});
-
-</script>
--->
-
 </body>
 
 
